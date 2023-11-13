@@ -1,5 +1,220 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media (width >= 768px) {
+  .page {
+    gap: 60px;
+  }
+}
+
+.header {
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-block-size: 668px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+
+.header::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid #ff0070;
+  border-bottom: 1px solid #ff0070;
+  position: absolute;
+  inset-block-end: -30px;
+  inset-inline-start: 10px;
+}
+
+.header::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid #ff0070;
+  border-top: 1px solid #ff0070;
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 9px;
+}
+
+@media (width >= 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header::before {
+    inset-block-end: -374px;
+    inset-inline-start: 20px;
+  }
+
+  .header::after {
+    inset-block-start: 20px;
+    inset-inline-end: 19px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header::before {
+    inset-block-end: -128px;
+    inset-inline-start: 20px;
+  }
+}
+
+.header__decorated-element {
+  position: absolute;
+  font-size: 18px;
+  line-height: 25px;
+  inset-block-start: 10px;
+  inset-inline-end: 38px;
+  color: #ff0070;
+  text-transform: uppercase;
+}
+
+.header__decorated-element::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 8px;
+  inset-inline-end: -20px;
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  box-shadow: 0px 0px 4px 2px #ff0070;
+  background-color: #ff0070;
+}
+
+@media (width >= 768px) {
+  .header__decorated-element {
+    inset-block-start: 20px;
+    inset-inline-end: 48px;
+  }
+
+  .header__decorated-element::after {
+    inset-block-start: 8px;
+    inset-inline-end: -20px;
+  }
+}
+
+.header__theme-menu {
+  align-self: flex-end;
+  margin-block-start: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+  .header__theme-menu {
+    margin-block-start: 172px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    align-self: center;
+    margin-block-start: 0px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+}
+.header__theme-menu-button {
+  inline-size: 70px;
+  block-size: 26px;
+  color: #ff0070;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid #ff007066;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid #ff0070;
+  box-sizing: border-box;
+}
+
+.header__theme-menu-button_active,
+.header__theme-menu-button_active:hover {
+  outline: 1px solid #ff0070;
+  cursor: auto;
+}
+
+.header__title {
+  color: #db00ff;
+  font-size: 116px;
+  font-weight: bold;
+  line-height: 82.5%;
+  text-shadow: 4px 4px #ff0070;
+  margin-block-start: 65px;
+  align-self: flex-start;
+}
+
+@media (width >= 768px) {
+  .header__title {
+    font-size: 120px;
+    margin-block-start: 173px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__title {
+    font-size: 157px;
+    margin-block-start: 273px;
+  }
+}
+
+.header__paragraph {
+  background-color: #ff0070;
+  color: #000028;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23.4px;
+  margin-block-start: 55px;
+  margin-block-end: 56px;
+  align-self: flex-end;
+}
+
+@media (width >= 768px) {
+  .header__paragraph {
+    inline-size: clamp(364px, 0.5 * (100vw - 20px * 2), 491px);
+    margin-block-start: 162px;
+    margin-block-end: 163px;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__paragraph {
+    margin-block-start: 114px;
+    margin-block-end: 124px;
+  }
+}
+
+.content {
+  background-color: blue;
+  block-size: 100px;
+}
+
+.footer {
+  background-color: white;
+  block-size: 50px;
 }
