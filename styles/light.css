@@ -1,12 +1,121 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root .theme_light {
+  --background-image: url(../images/cover-image-light.png);
+
+  --main-color: #fff1f7;
+  --main-accent-color: #ff8dcb;
+  --main-title-color: #ffc2e6;
+  --text-color-link: #353430;
+  --menu-hover-color: #32312d66;
+}
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-color: var(--main-color);
+}
+
+.theme_light .header {
+  background-image: var(--background-image);
+}
+
+/* in dark --main-accent-color */
+.theme_light .decorated-zone {
+  color: var(--text-color-link);
+}
+
+.theme_light .header__decorated-element {
+  display: none;
+}
+/* in dark --main-accent-color */
+.theme_light .header__theme-menu-button {
+  color: var(--text-color-link);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  outline: 1px solid var(--menu-hover-color);
+}
+
+.theme_light .header__theme-menu-button:focus {
+  outline: none;
+}
+/* in dark --main-accent-color */
+.theme_light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--text-color-link);
+}
+/* in dark --main-accent-color */
+.theme_light .header__theme-menu-button_active,
+.theme_light .header__theme-menu-button_active:hover {
+  outline: none;
+  border: 1px solid var(--text-color-link);
+}
+
+.theme_light .header__title {
+  color: var(--main-title-color);
+  text-shadow: 4px 4px var(--main-accent-color);
+}
+
+.theme_light .header__paragraph {
+  background-color: var(--main-accent-color);
+  color: var(--text-color-link);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-image: url(../images/cover-image-light.png);
+
+    --main-color: #fff1f7;
+    --main-accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --text-color-link: #353430;
+    --menu-hover-color: #32312d66;
+  }
+
+  .page {
+    background-color: var(--main-color);
+  }
+
+  .header {
+    background-image: var(--background-image);
+  }
+
+  /* in dark --main-accent-color */
+  .decorated-zone {
+    color: var(--text-color-link);
+  }
+
+  .header__decorated-element {
+    display: none;
+  }
+
+  /* in dark --main-accent-color */
+  .header__theme-menu-button {
+    color: var(--text-color-link);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--menu-hover-color);
+  }
+
+  .header__theme-menu-button:focus {
+    outline: none;
+  }
+
+  /* in dark --main-accent-color */
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color-link);
+  }
+  /* in dark --main-accent-color */
+  .header__theme-menu-button_active,
+  .header__theme-menu-button_active:hover {
+    outline: none;
+    border: 1px solid var(--text-color-link);
+  }
+
+  .header__title {
+    color: var(--main-title-color);
+    text-shadow: 4px 4px var(--main-accent-color);
+  }
+  /* in dark --main-accent-color */
+  .header__paragraph {
+    background-color: var(--main-accent-color);
+    color: var(--text-color-link);
+  }
 }

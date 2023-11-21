@@ -1,5 +1,4 @@
 const themeButtons = document.querySelectorAll('.header__theme-menu-button');
-
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     themeButtons.forEach((btn) => {
@@ -28,6 +27,8 @@ function changeTheme(theme) {
   localStorage.setItem('theme', theme);
 }
 
+// инициализация темы после перезахода на сайт
+
 function initTheme() {
   const theme = localStorage.getItem('theme');
   if (theme) {
@@ -44,5 +45,4 @@ function initTheme() {
       .setAttribute('disabled', true);
   }
 }
-
 initTheme();
