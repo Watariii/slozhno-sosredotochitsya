@@ -58,6 +58,55 @@
   color: var(--main-color);
 }
 
+/*____________________________________________________________________________*/
+
+.theme_dark .content {
+  background-color: var(--main-color);
+}
+
+.theme_dark .question-section__title,
+.theme_dark .reason-section__title,
+.theme_dark .advice-section__title {
+  color: var(--main-accent-color);
+}
+
+.theme_dark .title-decor {
+  color: var(--main-color);
+  background-color: var(--main-accent-color);
+}
+
+.theme_dark .question-section__article-paragraph,
+.theme_dark .reason-section__article-paragraph,
+.theme_dark .advice-section__article-paragraph {
+  color: var(--text-color);
+}
+
+.theme_dark .article__link {
+  text-shadow: 2px 1px 0px var(--main-accent-color);
+}
+
+.theme_dark .article__link:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+.theme_dark .article__link:focus {
+  outline: none;
+}
+
+.theme_dark .article__link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+
+.theme_dark .footer {
+  background-color: var(--main-color);
+}
+
+.theme_dark .footer__title {
+  color: var(--main-title-color);
+  text-shadow: 4px 4px var(--main-accent-color);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: url(../images/cover-image-dark.png);
@@ -116,5 +165,52 @@
   .header__paragraph {
     background-color: var(--main-accent-color);
     color: var(--main-color);
+  }
+
+  .content {
+    background-color: var(--main-color);
+  }
+  
+  .question-section__title,
+  .reason-section__title,
+  .advice-section__title {
+    color: var(--main-accent-color);
+  }
+  
+  .title-decor {
+    color: var(--main-color);
+    background-color: var(--main-accent-color);
+  }
+  
+  .question-section__article-paragraph,
+  .reason-section__article-paragraph,
+  .advice-section__article-paragraph {
+    color: var(--text-color);
+  }
+  
+  .article__link {
+    text-shadow: 2px 1px 0px var(--main-accent-color);
+  }
+
+  .article__link:hover {
+    border-bottom: 2px solid currentColor;
+  }
+  
+  .article__link:focus {
+    outline: none;
+  }
+  
+  .article__link:focus-visible {
+    outline: 1px solid currentColor;
+  }
+  
+  
+  .footer {
+    background-color: var(--main-color);
+  }
+  
+  .footer__title {
+    color: var(--main-title-color);
+    text-shadow: 4px 4px var(--main-accent-color);
   }
 }

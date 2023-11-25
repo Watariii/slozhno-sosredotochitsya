@@ -56,6 +56,54 @@
   background-color: var(--main-accent-color);
   color: var(--text-color-link);
 }
+/*____________________________________________________________________________*/
+
+.theme_light .content {
+  background-color: var(--main-color);
+}
+
+.theme_light .question-section__title,
+.theme_light .reason-section__title,
+.theme_light .advice-section__title {
+  color: var(--text-color-link);
+}
+
+.theme_light .title-decor {
+  color: var(--text-color-link);
+  background-color: var(--main-accent-color);
+}
+
+.theme_light .question-section__article-paragraph,
+.theme_light .reason-section__article-paragraph,
+.theme_light .advice-section__article-paragraph {
+  color: var(--text-color-link);
+}
+
+.theme_light .article__link {
+  text-shadow: 2px 1px 0px var(--main-accent-color);
+}
+
+.theme_light .article__link:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+.theme_light .article__link:focus {
+  outline: none;
+}
+
+.theme_light .article__link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+
+.theme_light .footer {
+  background-color: var(--main-color);
+}
+
+.theme_light .footer__title {
+  color: var(--main-title-color);
+  text-shadow: 4px 4px var(--main-accent-color);
+}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -117,5 +165,52 @@
   .header__paragraph {
     background-color: var(--main-accent-color);
     color: var(--text-color-link);
+  }
+
+  .content {
+    background-color: var(--main-color);
+  }
+  
+  .question-section__title,
+  .reason-section__title,
+  .advice-section__title {
+    color: var(--text-color-link);
+  }
+  
+  .title-decor {
+    color: var(--text-color-link);
+    background-color: var(--main-accent-color);
+  }
+  
+  .question-section__article-paragraph,
+  .reason-section__article-paragraph,
+  .advice-section__article-paragraph {
+    color: var(--text-color-link);
+  }
+  
+  .article__link {
+    text-shadow: 2px 1px 0px var(--main-accent-color);
+  }
+
+  .article__link:hover {
+    border-bottom: 2px solid currentColor;
+  }
+  
+  .article__link:focus {
+    outline: none;
+  }
+  
+  .article__link:focus-visible {
+    outline: 1px solid currentColor;
+  }
+  
+  
+  .footer {
+    background-color: var(--main-color);
+  }
+  
+  .footer__title {
+    color: var(--main-title-color);
+    text-shadow: 4px 4px var(--main-accent-color);
   }
 }
