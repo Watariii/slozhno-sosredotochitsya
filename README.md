@@ -1,8 +1,8 @@
 # Проект: Сложно сосредоточиться
 
-*[Ссылка на репозиторий](https://github.com/Watariii/slozhno-sosredotochitsya)
+* [Ссылка на репозиторий](https://github.com/Watariii/slozhno-sosredotochitsya)
 
-*[Ссылка на проект](https://sukhov-nikita.ru/slozhno-sosredotochitsya/)
+* [Ссылка на проект](https://sukhov-nikita.ru/slozhno-sosredotochitsya/)
 
 ## Описание проекта
 
